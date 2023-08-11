@@ -1,0 +1,23 @@
+package AssigmentJava;
+
+import java.util.Scanner;
+
+public class Six {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//W.A.J.P for create Fibonacci Series.
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter number");
+		int first=sc.nextInt();
+		int firstfibonic=0;
+		int secondfibonic=1;
+		for(int i=1;i<=first;i++){
+			
+			int fibonic=firstfibonic+secondfibonic;
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+import org.openqa.selenium.WebDriver;
+
+public class Selenium_first {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String url="facebook.com";
+		System.setProperty("Webdriver.chrome.driver","C:\\Users\\mukes\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe\");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(url);
+	}
+
+}

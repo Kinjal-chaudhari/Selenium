@@ -1,0 +1,46 @@
+package AssigmentJava;
+
+import java.util.Scanner;
+
+public class Fifth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//WAP to find the index of an array element.?
+		
+		Scanner sc=new Scanner(System.in);
+		int size=sc.nextInt();
+		int array[]=new int[size];
+		System.out.println("user enter array size");
+		for(int index=0;index<array.length;index++)
+		{
+			System.out.print("enter element at array :["+index+"]" );
+            array[index]=sc.nextInt();
+		}
+		
+		int index=findIndex( array,size);
+				if(index!=1) {
+					System.out.println("the element"+size+ "is found atindex" );
+				}
+				else {
+					System.out.println("the element "+size+"is not found ");
+				}
+				
+			}
+
+	private static int findIndex(int[] array, int size) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<array.length;i++){
+			
+			if(array[i]==size) {
+				return i;
+			}
+		}
+		return 0;
+	}
+			
+			
+		}
+	
+
+

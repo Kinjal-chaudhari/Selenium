@@ -1,0 +1,26 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Selenium_first {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String url="https://www.facebook.com/";
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\mukes\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(url);
+		
+		String Exceptedresult="facebook.com";
+		String actualresult=driver.getTitle();
+		System.out.println(actualresult);
+		if(Exceptedresult==actualresult) {
+			System.out.print("pass");
+		}
+		else {
+			System.out.print("fail");
+		}
+	}
+
+}

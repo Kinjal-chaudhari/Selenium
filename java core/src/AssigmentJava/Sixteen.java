@@ -1,0 +1,25 @@
+package AssigmentJava;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+//import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class Sixteen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//WAP to iterate through all elements in an array list.
+		 ArrayList list=new ArrayList();
+		   list.add(1);
+		   list.add("selenium");
+		   list.add("java");
+		   list.add(5);
+		   System.out.println(list);
+		   Iterator itr=list.iterator();
+		   while(itr.hasNext()) {
+			   System.out.println(itr.next());
+		   }
+	}	
+
+	}

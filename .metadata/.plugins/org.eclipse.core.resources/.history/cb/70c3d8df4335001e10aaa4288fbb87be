@@ -1,0 +1,20 @@
+package AssigmentJava;
+
+import java.util.Scanner;
+
+public class Third {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//W.A.J.P to find factorial for Given Number
+		Scanner sc=new Scanner(System.in);
+		int i=sc.nextInt();
+		//int factorial=1;
+		for(int factorial=1;factorial<=i;factorial++) {
+			factorial*=1;
+			System.out.println("factoiral of "+i+ "is"+factorial);
+			
+		}
+	}
+
+}

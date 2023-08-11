@@ -1,0 +1,16 @@
+package AssigmentJava;
+
+public class Nine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//WAP to Compare Two String
+		String str1="kinjal";
+		String str2="jigu";
+		System.out.println("compare two string");
+		 int str3=str1.compareTo(str2);
+		 System.out.println(str3);
+		
+	}
+
+}
